@@ -5,9 +5,11 @@ def change():
     print(expense)
     print("Dinero recibido")
     print(money)
+    print("")
     print("Vuelto")
+    print("")
     pesos= money - int(expense) - 1
-    centavos= 1 - (expense%1)
+    centavos= int((1- (expense%1))*100)
     print("Pesos:")
     print(pesos)
     print("Centavos:")
